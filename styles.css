@@ -37,6 +37,7 @@ body{
     padding: 30px;
     justify-content: center;
     background: #fff;
+    box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* ----------------------header css----------------------- */
@@ -106,7 +107,7 @@ header h1{
 
 /* ----------------------Categories section css----------------------- */
 
-.categories, .sales{
+.categories, .sales, .demons, .srts{
     color: rgb(93, 96, 99);
     background: #fff;
 }
@@ -157,7 +158,7 @@ header h1{
 /* ----------------------Sales section css----------------------- */
 
 
-.sales, .srts{
+.sales{
     margin-top: 10px;
 }
 
@@ -248,10 +249,11 @@ header h1{
 
 /* ----------------------demons section css----------------------- */
 
-
 .demons .blocks{
     justify-content: left;
     gap: 20px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    margin-top: -50px;
 }
 .demons .blocks .card{
     max-width: 600px;
@@ -274,6 +276,48 @@ header h1{
     width: 100%;
     object-fit: contain;
 }
+
+.demons img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+.demons .right{
+    flex: 2;
+}
+
+.demons h5{
+    margin: 10px;
+}
+
+.demons p{
+    font-size: 14px;
+    padding: 10px;
+}
+
+.demons .prices{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.demons button{
+    border: 1px solid rgb(97, 184, 224);
+    border-radius: 5px;
+    background: none;
+    padding: 5px;
+    cursor: pointer;
+    color: rgb(97, 184, 224);
+}
+
+.demons button:hover{
+    color: white;
+    background: rgb(97, 184, 224);
+}
+
+
 
 /* ----------------------footer css----------------------- */
 
