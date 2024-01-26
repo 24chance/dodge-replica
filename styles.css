@@ -112,6 +112,10 @@ header h1{
     background: #fff;
 }
 
+.categories .blocks{
+    box-shadow: 0px 0px 0px #fff;
+}
+
 .categoriesHeader{
     padding: 20px;
     text-align: center;
