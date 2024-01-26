@@ -1,0 +1,284 @@
+
+
+/* ----------------------overall css----------------------- */
+
+*{
+    font-family: system-ui;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.title{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+}
+
+h2{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+i{
+    padding: 5px;
+}
+
+body{
+    background: #6db5e633;
+}
+
+.blocks{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: center;
+    background: #fff;
+}
+
+/* ----------------------header css----------------------- */
+header{
+    height: 100vh;  
+    background: url(https://dcdws.blob.core.windows.net/dws-2229980-3230-media/2016/04/Dodge-Challenger-SRT-Demon.psd-dark.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.308);
+    padding: 10px;
+    justify-content: space-between;
+}
+nav h1{
+    color: white;
+    padding: 10px;
+}
+
+nav .links a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav button{
+    background: rgb(97, 184, 224);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.headerText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+
+header h1, header h3{
+    padding: 10px;
+    
+}
+
+header h1{
+    font-size: 40px;
+}
+
+
+/* ----------------------Main css----------------------- */
+
+
+/* ----------------------Categories section css----------------------- */
+
+.categories, .sales{
+    color: rgb(93, 96, 99);
+    background: #fff;
+}
+
+.categoriesHeader{
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.categories .blocks .card{
+    background: white;
+    width: 250px;
+    gap: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.categories .blocks .card:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.categories .blocks .card .image{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+.categories .blocks .card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.categories .blocks .card p{
+    font-size: 13px;
+    margin: 20px 10px;
+}
+
+
+
+/* ----------------------Sales section css----------------------- */
+
+
+.sales, .srts{
+    margin-top: 10px;
+}
+
+
+.sales .blocks .card{
+    max-width: 600px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.sales .image{
+    flex: 1;
+    border-radius: 10px;
+    min-width: 200px;
+    overflow: hidden;
+}
+
+.sales img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sales img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+.sales .right{
+    flex: 2;
+}
+
+.sales h5{
+    margin: 10px;
+}
+
+.sales p{
+    font-size: 14px;
+    padding: 10px;
+}
+
+.sales .prices{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prices h4{
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.sales button{
+    border: 1px solid rgb(97, 184, 224);
+    border-radius: 5px;
+    background: none;
+    padding: 5px;
+    cursor: pointer;
+    color: rgb(97, 184, 224);
+}
+
+.sales button:hover{
+    color: white;
+    background: rgb(97, 184, 224);
+}
+
+/* ----------------------SRTs section css----------------------- */
+
+
+.srts .blocks{
+    justify-content: baseline;
+    gap: 10px;
+}
+.srts .blocks .card{
+    max-width: 300px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* ----------------------demons section css----------------------- */
+
+
+.demons .blocks{
+    justify-content: left;
+    gap: 20px;
+}
+.demons .blocks .card{
+    max-width: 600px;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+}
+
+.demons .image{
+    max-height: 200px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    min-width: 400px;
+    overflow: hidden;
+}
+
+.demons img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* ----------------------footer css----------------------- */
+
+footer{
+    padding: 30px;
+    color: rgb(93, 96, 99);
+    text-align: center;
+}
